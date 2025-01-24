@@ -35,7 +35,7 @@ be in the parent module's `node_modules`.
 Solution: use `get-file-module` to find the file:
 
 ```javascript
-const gfm = require('get-file-module');
+const gfm = require('get-module-file');
 gfm.future(__dirname, 'style_mod', '/style.css')
   .then(function(filePath) {
     // read the file and do whatever is you need to do
